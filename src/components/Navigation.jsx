@@ -75,7 +75,7 @@ function Navigation() {
           { dropDown && 
             <div  className='w-fit h-fit absolute '>
             <ul className='flex flex-col p-3 shadow rounded-b-md bg-white items-start justify-center'>
-              <Link to='/gpt'><li className='ml-2 mr-2'>GPT-2</li></Link>
+              <Link to='/gpt'><li className='ml-2 mr-2'>QnA</li></Link>
               <li className='h-[0.7px] w-full bg-gray-300'></li>
               <li className='ml-2 mr-2'>Contact</li>
             </ul>
@@ -85,7 +85,7 @@ function Navigation() {
         </ul>
       </div>
       <div>
-        <button className=' p-2'><Link target='_blank' to='https://github.com/AliAbdullah0'><img src="src\assets\github.png" alt="" className='h-7'/></Link></button>
+        <button className=' p-2'><Link target='_blank' to='https://github.com/AliAbdullah0?tab=repositories'><img src="src\assets\github.png" alt="" className='h-7'/></Link></button>
       </div>
     </div>
     </>

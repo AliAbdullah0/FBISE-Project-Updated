@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index path='home' element={<Home />} />
+          <Route index element={<Home />} />
           <Route path='imagerecognition' element={<ImageRecognition/>}/>
           <Route path='gpt' element={<Gpt/>}/>
         </Route>
