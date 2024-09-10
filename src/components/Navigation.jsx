@@ -66,23 +66,8 @@ function Navigation() {
       </div>
 }
     <div className='hidden md:flex p-2 items-center justify-between  min-h-16'>
-      <div><img src="src\assets\Logo AI.png" alt="" className='h-9' /></div>
+      <div><Link to='/'><img src="src\assets\Logo AI.png" alt="" className='h-9' /></Link></div>
       <div>
-        <ul className='flex gap-2'>
-          <Link to='/home'><li className='font-semibold'>Home</li></Link>
-          <Link to='/imagerecognition'><li>Image Detection</li></Link>
-          <Link><li onClick={()=>setDropDown(!dropDown)} className='hover:transition flex gap-1 items-center justify-center ease-in-out duration-150 hover:border-b-2 hover:border-b-blue-500 '>More <img src="src\assets\right-arrow.png" alt="" className='h-4 mt-1' /></li>
-          { dropDown && 
-            <div  className='w-fit h-fit absolute '>
-            <ul className='flex flex-col p-3 shadow rounded-b-md bg-white items-start justify-center'>
-              <Link to='/gpt'><li className='ml-2 mr-2'>QnA</li></Link>
-              <li className='h-[0.7px] w-full bg-gray-300'></li>
-              <li className='ml-2 mr-2'>Contact</li>
-            </ul>
-          </div>
-          }
-          </Link>
-        </ul>
       </div>
       <div>
         <button className=' p-2'><Link target='_blank' to='https://github.com/AliAbdullah0?tab=repositories'><img src="src\assets\github.png" alt="" className='h-7'/></Link></button>
