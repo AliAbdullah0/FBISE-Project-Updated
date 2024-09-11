@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Sidebar from './Sidebar';
 
 function Cards() {
     return (
@@ -50,11 +49,11 @@ function Cards() {
                                         </span>
                                         <div
                                             class="space-y-6 pt-6 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-                                            <p>A Tensor flow model to Recognize Image Content and display information about it.</p>
+                                            <p>A Tensor flow model to extract info from Passage and answer questions about it.</p>
                                         </div>
                                         <div class="pt-6 text-base font-semibold leading-7">
                                             <p>
-                                                <Link to='imagerecognition' class="text-sky-500 transition-all duration-300 group-hover:text-white">Try Model
+                                                <Link to='gpt' class="text-sky-500 transition-all duration-300 group-hover:text-white">Try Model
                                                     &rarr;
                                                 </Link>
                                             </p>
@@ -76,7 +75,7 @@ function Cards() {
                                         </div>
                                         <div class="pt-5 text-base font-semibold leading-7">
                                             <p>
-                                                <Link to='https://www.github.com/AliAbdullah0' class="text-white transition-all duration-300 group-hover:text-white">Source Code
+                                                <Link to='https://github.com/AliAbdullah0/Source-Code-FBISE-Project' class="text-white transition-all duration-300 group-hover:text-white">Source Code
                                                     &rarr;
                                                 </Link>
                                             </p>

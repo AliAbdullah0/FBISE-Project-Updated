@@ -9,15 +9,15 @@ function HeroSection() {
 
         <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
           <div class="mx-auto mb-12 w-full max-w-3xl text-center md:mb-16 lg:mb-20">
-            <h1 class="mb-4 text-4xl font-semibold md:text-6xl">Analyze Images and Get Instant
+            <h1 class="mb-4 text-4xl font-semibold md:text-6xl animate-wiggle ">Analyze Images and Get Instant
 
               <span class="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/6390526ac2a607693620c97b_Rectangle%2010.svg')] bg-cover bg-center px-4 text-white"> Answers </span>.</h1>
-            <p class="mx-auto mb-5 max-w-[528px] text-xl text-[#636262] lg:mb-8">Fast results for image interpretation and question handling.</p>
-            <div class="flex justify-center">
-              <a href="#" class="mr-5 inline-block rounded-xl bg-black px-8 py-4 text-center font-semibold text-white [box-shadow:rgb(19,_83,_254)_6px_6px] md:mr-6">Get Started</a>
+            <p class="mx-auto mb-5 max-w-[528px] text-xl text-[#636262] lg:mb-8 animate-wiggle">Fast results for image interpretation and question handling.</p>
+            <div class="flex justify-center animate-wiggle">
+              <a href="#" class="mr-5 inline-block rounded-xl bg-black px-8 py-4 text-center font-semibold text-white [box-shadow:rgb(19,_83,_254)_6px_6px] md:mr-6" >Get Started</a>
             </div>
           </div>
-          <div class="relative mx-auto h-[512px]">
+          <div class="relative mx-auto h-[512px] animate-wiggle">
             <img src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63915d247ab06a755ee4aaee_magicpattern-KfFmwa7m5VQ-unsplash.jpg" alt="" class="inline-block h-full w-full rounded-xl object-cover sm:rounded-2xl" />
             <div class="absolute bottom-0 left-4 right-0 top-4 -z-10 h-full w-full rounded-2xl bg-black"></div>
           </div>

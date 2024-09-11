@@ -54,44 +54,54 @@ function Gpt() {
 
   if (loading) {
     return (
-      <div className='flex w-full items-center justify-center'>
+      <div className='flex w-full items-center justify-center mt-3'>
         <img src="src/assets/loading.gif" alt="Loading..." className='h-7' />
       </div>
     );
   }
 
   return (
-    <div>
-      <h1 className='font-semibold text-[4ch] p-2 text-center'>A Question Answering Model</h1>
-      <div className='w-full p-2'>
+    <div className='mt-5 space-y-3'>
+      <h2 class="flex flex-row flex-nowrap items-center justify-center">
+            <span class="flex-none block mx-4 px-4 py-2.5 text-xl rounded leading-none font-medium bg-sky-500 text-white">
+              QnA Model
+            </span>
+          </h2>
+      <div className=' p-2 w-full flex items-center justify-center'>
         <textarea
           cols="50"
           rows="10"
           value={context}
           onChange={(e) => setContext(e.target.value)}
           placeholder='Enter Context'
-          className='outline-none rounded-2xl w-1/2 h-1/2 bg-blue-100 p-3 shadow-sm hover:transition-all hover:shadow-lg'
+          className='border-2 border-gray-100 outline-none rounded-2xl w-1/2 h-1/2 p-3 shadow-sm focus:transition-all focus:shadow-lg focus:-translate-y-1'
         />
       </div>
-      <div className='w-full p-2 flex flex-col gap-2'>
-        <h2 className='font-semibold'>Ask a Question!</h2>
+      <div className='w-full p-2 flex flex-col items-center gap-2 '>
+        <h2 className='font-semibold text-[3ch] mb-1 font'>Ask a Question!</h2>
+        <div className='flex w-full items-center justify-center gap-2'>
         <input
           type="text"
           ref={inputRef}
           placeholder='Ask Question'
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
-          className='outline-none p-2 border-2 border-gray-100 rounded-2xl min-w-[30%] bg-gray-100 w-1/5'
+          className='outline-none p-2 rounded-2xl min-w-[30%] border-2 border-gray-100 w-1/5 shadow-sm focus:transition-all focus:shadow-lg focus:-translate-y-1'
         />
-        <button
-          className='bg-blue-500 text-white rounded-3xl p-2 w-fit'
-          onClick={handleQuestionSubmit}
-        >
-          Submit
-        </button>
-        <p className='bg-green-300 p-2'><span className='font-semibold'>Answer :</span><span className='first-letter:capitalize'>{response}</span></p>
+       <div class="flex justify-center">
+              <a href="#" class="mr-5 inline-block rounded-xl bg-black px-4 py-2 text-center font-semibold text-white md:mr-6" onClick={handleQuestionSubmit}>Find</a>
+            </div>
+        </div>
+        {
+          response &&
+        <p className='bg-green-300 p-2 rounded'><span className='first-letter:capitalize'>{`Answer: ${response}`}</span></p>
+        }
       </div>
+      <img src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63905b9f809b5c8180ce30c5_pattern-1.svg" alt="" class="absolute bottom-0 left-0 right-auto top-auto -z-10 inline-block md:bottom-1/2 md:left-0 md:right-auto md:top-auto" />
+        <img src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63905ba1538296b3f50a905e_pattern-2.svg" alt="" class="absolute bottom-auto left-auto right-0 top-0 -z-10 hidden sm:inline-block" />
+        
     </div>
+    
   );
 }
 
