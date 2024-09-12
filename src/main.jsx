@@ -7,6 +7,7 @@ import Home from './components/Home.jsx';
 import Services from './components/Services.jsx';
 import ImageRecognition from './components/imageRecognition/ImageRecognition.jsx';
 import Gpt from './components/gpt-2/Gpt.jsx';
+import ObjRecognition from './components/objectRecognition/ObjRecognition.jsx';
 
 // Render directly to the DOM without App.jsx or any unnecessary wrapper
 createRoot(document.getElementById('root')).render(
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
           <Route path='imagerecognition' element={<ImageRecognition/>}/>
           <Route path='gpt' element={<Gpt/>}/>
           <Route path='services' element={<Services/>}/>
+          <Route path='objrec' element={<ObjRecognition/>}/>
         </Route>
       </Routes>
     </Router>

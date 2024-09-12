@@ -27,28 +27,15 @@ function Navigation() {
 
         {/* Mobile Menu */}
         {menu && (
-          <div className='w-full flex justify-evenly p-2 text-xs md:hidden flex-wrap gap-2'>
-            <div>
-              <ul className='flex flex-col gap-1'>
-                <Link to='/home'>
-                  <li className='text-base font-semibold'>Home</li>
-                </Link>
-              </ul>
-            </div>
-            <div>
-              <ul className='flex flex-col gap-1'>
-                <Link to='/services'>
-                  <li className='text-base font-semibold'>Services</li>
-                </Link>
-              </ul>
-            </div>
-            <div>
-              <ul className='flex flex-col gap-1'>
-                <Link to='/contact'>
-                  <li className='text-base font-semibold'>Contact</li>
-                </Link>
-              </ul>
-            </div>
+          <div className='w-full flex justify-evenly p-2 text-sm md:hidden flex-wrap gap-2'>
+           <ul className='flex gap-2 mt-2 flex-wrap '>
+            <Link to='/' className='font-semibold border-b-2 border-blue-600'><li>Home</li></Link>
+            <Link to='/imagerecognition'><li className='border-b-2 border-blue-600'>Image Recognition</li></Link>
+            <Link to='/objrec'><li className='border-b-2 border-blue-600'>Object Recognition</li></Link>
+            <Link to='/gpt'><li className='border-b-2 border-blue-600'>QnA Model</li></Link>
+            <Link to='/services'><li className='border-b-2 border-blue-600'>About Us</li></Link>
+
+           </ul>
           </div>
         )}
 
@@ -75,6 +62,11 @@ function Navigation() {
                     <li>
                       <Link to="/imagerecognition" className="block  px-4 py-2 hover:bg-blue-100 transition border-transparent hover:border-blue-600 border-b-2">
                         Image Recognition
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/objrec" className="block px-4 py-2 hover:bg-blue-100 transition border-transparent hover:border-blue-600 border-b-2">
+                        Object Recognition
                       </Link>
                     </li>
                     <li>
