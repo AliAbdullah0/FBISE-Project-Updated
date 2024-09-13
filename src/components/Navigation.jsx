@@ -84,7 +84,7 @@ function Navigation() {
             </ul>
             <div>
               <button className='p-2'>
-                <Link target='_blank' to='https://github.com/AliAbdullah0/Source-Code-FBISE-Project'>
+                <Link target='_blank' to='https://github.com/AliAbdullah0/FBISE-Project-Updated'>
                   <img src="src/assets/github.png" alt="GitHub" className='h-7' />
                 </Link>
               </button>

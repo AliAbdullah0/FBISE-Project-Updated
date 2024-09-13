@@ -18,7 +18,7 @@ function HeroSection() {
             </div>
           </div>
           <div class="relative mx-auto h-[512px] animate-wiggle">
-            <img src="https://assets.website-files.com/63904f663019b0d8edf8d57c/63915d247ab06a755ee4aaee_magicpattern-KfFmwa7m5VQ-unsplash.jpg" alt="" class="inline-block h-full w-full rounded-xl object-cover sm:rounded-2xl" />
+            <img src="src\assets\herobg-2.jpg" alt="" class="inline-block h-full w-full rounded-xl object-cover sm:rounded-2xl" />
             <div class="absolute bottom-0 left-4 right-0 top-4 -z-10 h-full w-full rounded-2xl bg-black"></div>
           </div>
         </div>

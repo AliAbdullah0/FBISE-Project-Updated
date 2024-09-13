@@ -18,10 +18,10 @@ function Footer() {
       <div>
       <ul className='flex flex-col gap-4 '>
           <li className='font-bold font-[Roboto] text-sm'>Help</li>
-          <li><Link to='' className='text-sm text-gray-500 font-bold hover:underline'>Project Details</Link></li>
+          <li><Link to='/services' className='text-sm text-gray-500 font-bold hover:underline'>Project Details</Link></li>
           <li><Link to='' className='text-sm text-gray-500 font-bold hover:underline'>Duration</Link></li>
           <li><Link to='' className='text-sm text-gray-500 font-bold hover:underline'>Planning</Link></li>
-          <li><Link to='' className='text-sm text-gray-500 font-bold hover:underline'>Source Code</Link></li>
+          <li><Link to='https://github.com/AliAbdullah0/FBISE-Project-Updated' className='text-sm text-gray-500 font-bold hover:underline'>Source Code</Link></li>
           </ul>
       </div>
       <div>
